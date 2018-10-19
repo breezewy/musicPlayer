@@ -134,10 +134,10 @@ $('.list').onclick = function(e){
     var target = e.target || e.srcElement;
     var liBox = $('.list').querySelectorAll('li');
     for(var i=0;i<liBox.length;i++){  //给每一个li绑定一个index属性，记录这首歌在数组中的下标
-      (function(i){
           liBox[i].index = i;
-      })(i)
-     currentIndex = liBox[i].index;
+      if (liBox[i] === target) {
+          currentIndex = liBox[i].index;
+      }
     }
     console.log(target.index);  
     loadMusic(musicList[target.index]);//然后把下标放到 loadMusic（）函数中实现歌曲的播放
@@ -160,7 +160,7 @@ audio.onplaying = function(){
             liBox[i].classList.remove('active')
         }
     }
-    console.log(currentIndex);
+    console.log('onplaying: ', currentIndex);
     liBox[currentIndex].classList.add('active');
 }
 

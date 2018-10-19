@@ -1,0 +1,14 @@
+
+body{
+    font:14px/1.5 "Arial";
+    height:100vh;
+}
+.clearfix::after{
+    content:"";
+    display: block;
+    clear:both;
+}
+
+.active {
+    background:rgba(169,169,169,0.6);
+}

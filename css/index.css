@@ -1,0 +1,100 @@
+@import url(reset.css);
+@import url(common.css);
+
+
+.cover {
+    /* position: absolute; */
+    /* content:""; */
+    width:100%;
+    height:100%;
+    background:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1540524214&di=4a65e72aee71b8cb24f1f2d90901eacc&imgtype=jpg&er=1&src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farchive%2F583e7c3fe4a9dcaaa57c4a99aa72cd27621e0b7b.jpg) center center no-repeat;
+    background-size:cover;
+    /* filter:opacity(0.6); */
+    /* filter:grayscale(0.9) */
+    /* filter:blur(3px); */
+}
+.music_box{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width:350px;
+    height:200px;
+    color:#FFf;
+}
+.music_panel {
+    height:50%;
+    padding:0 10px;
+    background:rgba(128,128,128,0.7);
+    border:1px solid #48D1CC; 
+}
+
+.music_panel .music .control {
+    float:left;
+    line-height: 100%;
+    padding:30px 0 0 30px;
+}
+.music .control span {
+    display: inline-block;
+    padding:5px;
+    margin-right:10px;
+    font-size: 18px;
+    color:#fff;
+}
+.music_panel .music .info {
+    float: right;
+    padding:15px 0 0 0;
+    width:50%;
+    text-align: center;
+}
+.music_panel .music .info .title{
+    font-size: 18px;
+}
+
+.progress_bar {
+    text-align: right;
+    padding-top:5px;
+    cursor: pointer;
+}
+.progress_total {
+    width:100%;
+    height:3px;
+    background:#666;
+}
+.progress_current {
+    height:3px;
+    width:0px;
+    background:#FF69B4;
+    margin-top:-3px;
+}
+.progress_bar .time{
+    padding-top:2px;
+    margin-right:10px;
+}
+
+.list {
+    padding:10px 10px;
+    border:1px solid gray;
+    border-top:none;
+    overflow: auto;
+    height:50%;
+    cursor:pointer;
+}
+.list li{
+    line-height: 28px;
+    border-bottom:1px solid #ccc;
+    color:#C71585;
+    padding-left:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
